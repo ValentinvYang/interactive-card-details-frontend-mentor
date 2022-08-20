@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>interactive card details form</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="background"></div>
+		<main>
+			<div class="card-back">
+				<picture>
+					<img src="bg-card-back.png" alt="" />
+				</picture>
+				<p class="card-back-number">000</p>
+			</div>
+			<div class="card-front">
+				<picture>
+					<img src="bg-card-front.png" alt="" />
+				</picture>
+				<div class="card-front-items-container">
+					<picture>
+						<img src="card-logo.svg" alt="" />
+					</picture>
+					<p class="card-front-number">0000 0000 0000 0000</p>
+					<div class="card-user">
+						<div>
+							<p>Jane Appleseed</p>
+						</div>
+						<div>00/00</div>
+					</div>
+				</div>
+			</div>
+			<div class="lower-part-container">
+				<div class="input">
+					<div>
+						<h2>Cardholder Name</h2>
+					</div>
+					<div>
+						<input
+							type="text"
+							placeholder="e.g. Jane Appleseed"
+							class="cardholder-name-number input-width"
+						/>
+					</div>
+				</div>
+				<div class="input">
+					<div>
+						<h2>Card Number</h2>
+					</div>
+					<div>
+						<input
+							type="text"
+							placeholder="e.g. 1234 5678 9123 0000"
+							class="cardholder-name-number input-width"
+						/>
+					</div>
+				</div>
+				<div class="input">
+					<div>
+						<h2>Exp. Date (MM/YY) &nbsp; Cvc</h2>
+					</div>
+						<div class="year-month">
+							<input
+								type="text"
+								class="cardholder-name-number exp-date-1"
+								placeholder="MM"
+							/>
+							<input
+								type="text"
+								class="cardholder-name-number exp-date-1"
+								placeholder="YY"
+							/>
+							<input
+								type="text"
+								class="cardholder-name-number exp-date-2"
+								placeholder="e.g. 123"
+							/>
+						</div>
+				</div>
+				<div class="input">
+					<button class="btn">
+						Confirm
+					</button>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
